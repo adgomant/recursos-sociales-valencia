@@ -125,7 +125,7 @@ def search_app():
     #st.set_page_config(
     #    page_icon="🔎",
     #)
-    openai.api_key = "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"
+    openai.api_key = "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"
     model = "gpt-3.5-turbo-0301"
 
     #st.write(load_css(), unsafe_allow_html=True)
