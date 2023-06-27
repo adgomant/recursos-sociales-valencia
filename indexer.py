@@ -68,4 +68,4 @@ def indexer(doc_dir, idx_dir):
     print("=========================")
 
 if __name__ == "__main__":
-    indexer("social_centres.json", "social_centres_index")
+    indexer(sys.argv[1], sys.argv[2])
