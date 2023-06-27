@@ -116,8 +116,6 @@ def chat_gpt(prompt, model="gpt-3.5-turbo", max_tokens=1024, max_context_tokens=
     )
     return response["choices"][0]["message"]["content"]
 
-
-
 def search_app():
     #st.set_page_config(
     #    page_icon="🔎",
@@ -172,6 +170,12 @@ def search_app():
                     st.write(search_result(i, **res), unsafe_allow_html=True)
             if st.button("Ver en el mapa"):
                 display_map(asociaciones=st.session_state.most_recent_results_from_search)
+    else:
+        st.marckdown(
+        """
+        ## ¡Bienvenido al Buscador de Recursos Sociales!
+        Ingresa tu consulta en el campo de búsqueda para encontrar recursos y servicios sociales en Valencia. Por ejemplo, busca "actividades para personas sin hogar". ¡Encuentra lo que necesitas y descubre cómo podemos ayudarte!
+        """)
 
 if __name__ == '__main__':
     search_app()
