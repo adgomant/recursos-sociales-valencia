@@ -3,8 +3,8 @@ Nuestra página web es una plataforma diseñada para proporcionar ayuda a person
 
 Todos los datos han sido obtenidos de la página [OpenData de Valencia](https://valencia.opendatasoft.com/explore/?sort=modified&refine.theme=Sociedad+y+Bienestar&disjunctive.features&disjunctive.modified&disjunctive.publisher&disjunctive.keyword&disjunctive.theme&disjunctive.language)  y del apartado de [Recursos Sociales](https://www.valencia.es/web/guest/val/infociutat/-/categories/37663) de la página Infociudad del ayuntamiento de Valencia.
 
-## La App
-La aplicación final se ha desplegado en [Streamlit Cloud](https://streamlit.io/cloud) y se puede acceder a ella [en el siguiente enlace](https://recursos-sociales-valencia-1c8gxx11vnv.streamlit.app/)
+## Acceso a la App
+La aplicación final se ha desplegado en [Streamlit Cloud](https://streamlit.io/cloud) y se puede acceder a ella [en el siguiente enlace](https://recursos-sociales-valencia-1c8gxx11vnv.streamlit.app/).
 
 # Funcionalidades Principales
 ## Buscador
