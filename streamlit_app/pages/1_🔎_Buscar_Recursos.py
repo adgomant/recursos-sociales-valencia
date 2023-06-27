@@ -172,7 +172,7 @@ def search_app():
                 display_map(asociaciones=st.session_state.most_recent_results_from_search)
     else:
         st.markdown("""
-        ## ¡Bienvenido al Buscador de Recursos Sociales!
+        ### ¡Bienvenido al Buscador de Recursos Sociales!
         
         Ingresa tu consulta en el campo de búsqueda para encontrar recursos y servicios sociales en Valencia. Por ejemplo, busca "actividades para personas sin hogar". ¡Encuentra lo que necesitas y descubre cómo podemos ayudarte!
         """)
