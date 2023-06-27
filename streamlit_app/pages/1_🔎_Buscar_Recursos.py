@@ -129,7 +129,7 @@ def search_app():
     openai.api_key = openaiapikey
     model = "gpt-3.5-turbo-0301"
     st.title('Búsca Recursos Sociales')
-    search = st.text_input('Enter search words:')
+    search = st.text_input('Ingresa tu consulta:')
     chat_response = st.empty()
     search_results = st.container()
 
@@ -175,7 +175,7 @@ def search_app():
         
         Estamos aquí para ayudarte a encontrar los recursos y servicios sociales que necesitas. Nuestro buscador te permitirá acceder a información relevante y actualizada sobre una amplia variedad de recursos disponibles en la ciudad de Valencia.
 
-        Para comenzar, puedes ingresar tu consulta en el campo de búsqueda a continuación. Por ejemplo, si estás buscando actividades para personas sin hogar :house_with_garden:, simplemente escribe "actividades para personas sin hogar" y presiona Enter.
+        Para comenzar, puedes ingresar tu consulta en el campo de búsqueda más arriba. Por ejemplo, si estás buscando actividades para personas sin hogar :house_with_garden:, simplemente escribe "actividades para personas sin hogar" y presiona Enter.
 
         ¡Explora los resultados y encuentra opciones que se ajusten a tus necesidades! Estamos comprometidos en proporcionarte información precisa y valiosa para que puedas acceder a los recursos sociales que necesitas.
 
