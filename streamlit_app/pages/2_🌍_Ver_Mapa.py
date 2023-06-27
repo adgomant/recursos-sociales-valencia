@@ -1,16 +1,8 @@
+# -*- coding: utf-8 -*-
 
-import sys
-import openai
 import pandas as pd
 import numpy as np
 import streamlit as st
-import json
-import re
-import sys
-import argparse
-from datetime import datetime
-from whoosh.index import open_dir
-from whoosh.qparser import QueryParser
 import folium
 from streamlit_folium import st_folium
 
