@@ -3,7 +3,7 @@ streamlit-folium
 whoosh
 pandas
 numpy
-json
+simplejson
 folium
 openai
 re
