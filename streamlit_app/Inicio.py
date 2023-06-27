@@ -1,12 +1,6 @@
 import streamlit as st
 import pandas as pd
 
-def set_session_state():
-    if "ubi_data" not in st.session_state:
-        st.session_state.ubi_data = load_data()
-    if "most_recent_results_from_search" not in st.session_state:
-        st.session_state.most_recent_results_from_search = []
-
 @st.cache_data
 def load_data():
     sc = pd.read_json("data/social_centres.json", orient="index")
@@ -27,6 +21,12 @@ def load_data():
                 new_rows.append(list(row.values)+list(candidate.iloc[0].values))
     data = pd.DataFrame(new_rows, index=new_idx, columns=new_cols)
     return data
+
+def set_session_state():
+    if "ubi_data" not in st.session_state:
+        st.session_state.ubi_data = load_data()
+    if "most_recent_results_from_search" not in st.session_state:
+        st.session_state.most_recent_results_from_search = []
 
 def main():
     st.set_page_config(
