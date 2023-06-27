@@ -4,7 +4,6 @@ import os
 import sys
 import time
 import json
-from datetime import datetime
 from whoosh import index, analysis, fields
 
 def create_index(idx_dir):
