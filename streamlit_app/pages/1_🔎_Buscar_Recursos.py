@@ -125,13 +125,14 @@ def search_app():
     #st.set_page_config(
     #    page_icon="🔎",
     #)
-    openai.api_key = "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"
-    model = "gpt-3.5-turbo-0301"
 
     #st.write(load_css(), unsafe_allow_html=True)
     
     num_results = st.sidebar.number_input('Número de resultados:', 10, 40)
     want_recomendation = st.sidebar.radio('Obtener recomendación?', ['Sí', 'No'])
+    st.sidebar.write("Si desea recomendaciones inteligentes, ingrese su clave de OpenAI.")
+    openai.api_key = st.sidebar.text_input("Your openai API key:")
+    model = "gpt-3.5-turbo-0301"
     st.title('Búsca Recursos Sociales')
     search = st.text_input('Enter search words:')
     chat_response = st.empty()
