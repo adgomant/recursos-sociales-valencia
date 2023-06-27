@@ -131,7 +131,8 @@ def search_app():
     num_results = st.sidebar.number_input('Número de resultados:', 10, 40)
     want_recomendation = st.sidebar.radio('Obtener recomendación?', ['Sí', 'No'])
     st.sidebar.write("Si desea recomendaciones inteligentes, ingrese su clave de OpenAI.")
-    openai.api_key = st.sidebar.text_input("Your openai API key:")
+    openaiapikey = st.sidebar.text_input("Your openai API key:")
+    openai.api_key = openaiapikey
     model = "gpt-3.5-turbo-0301"
     st.title('Búsca Recursos Sociales')
     search = st.text_input('Enter search words:')
@@ -149,7 +150,7 @@ def search_app():
           f"NOMBRE:{hit['title']}\nDESCRIPCION:{hit['highlights']}"
           for hit in hits
         ])
-        if want_recomendation == "Sí":
+        if want_recomendation == "Sí" and openaiapikey:
             with st.spinner("Obteniendo recomendación..."):
               negResponse = f"No parece que haya ninún centro para tus necesidades"
               prompt = f"Dada la siguiente consulta: {search}\nOfrece al ususario la mejor recomendación de entre los siguientes servicios: {resp}\nSi no puedes responder basandote en la lista proporcionada, responde '{negResponse}' y nada más"
