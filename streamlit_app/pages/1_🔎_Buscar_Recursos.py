@@ -1,14 +1,14 @@
+# -*- coding: utf-8 -*-
 
-# srcs/streamlit_app/app.py
+import json
+import re
 import openai
+import folium
 import pandas as pd
 import numpy as np
 import streamlit as st
-import json
-import re
 from whoosh.index import open_dir
 from whoosh.qparser import QueryParser
-import folium
 from streamlit_folium import st_folium
 
 def display_map(asociaciones, code=0, themes=['Todos']):
