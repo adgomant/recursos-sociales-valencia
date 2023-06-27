@@ -72,8 +72,8 @@ class SocialCentre:
             "website": self.website,
             "content": self.content,
         }
-           
-        
+
+
 def crawler(save_path="data/social_centres.json", verbose=True):
     sites, counter_id = {}, 0
 
@@ -129,6 +129,10 @@ def crawler(save_path="data/social_centres.json", verbose=True):
         # save sites as json for further indexing
         with open(save_path, "w+", encoding="utf-8") as f:
             json.dump(sites, f, ensure_ascii=False, indent=4)
-            
+
+
 if __name__=="__main__":
-    crawler(sys.argv[1], verbose=True)
+    if len(sys.argv) > 1:
+        crawler(sys.argv[1])
+    else:
+        crawler()
