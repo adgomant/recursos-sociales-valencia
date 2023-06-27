@@ -63,7 +63,6 @@ def load_index(idx_dir):
     ix = open_dir(idx_dir)
     return ix
 
-@st.cache_data
 def index_search(ix, q, num_docs=-1):
     parser = QueryParser(fieldname="content", schema=ix.schema)
     query = parser.parse(q)
