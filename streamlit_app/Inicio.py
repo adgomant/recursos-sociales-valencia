@@ -21,23 +21,6 @@ def load_data():
                 new_rows.append(list(row.values)+list(candidate.iloc[0].values))
     data = pd.DataFrame(new_rows, index=new_idx, columns=new_cols)
     return data
-    
-def add_logo():
-    st.markdown(
-        """
-        <style>
-            [data-testid="stSidebarNav"]::before {
-                content: "Recursos Sociales Valencia";
-                margin-left: 20px;
-                margin-top: 20px;
-                font-size: 30px;
-                position: relative;
-                top: 100px;
-            }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
 
 def set_session_state():
     if "ubi_data" not in st.session_state:
@@ -51,7 +34,6 @@ def main():
         page_icon="👋",
     )
     set_session_state()
-    add_logo()
     st.markdown(
         """
         # ¡Bienvenido a Recursos Sociales Valencia! 👋
