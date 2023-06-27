@@ -34,6 +34,7 @@ def main():
         page_icon="👋",
     )
     set_session_state()
+    st.sidebar.markdown("#### Recursos Sociales Valencia")
     st.markdown(
         """
         # ¡Bienvenido a Recursos Sociales Valencia! 👋
