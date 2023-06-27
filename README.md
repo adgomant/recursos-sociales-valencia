@@ -16,12 +16,9 @@ La funcionalidad del mapa interactivo permite a los usuarios explorar los recurs
 # Herramientas Utilizadas
 En el desarrollo de la aplicación de Recursos Sociales Valencia, se han utilizado las siguientes herramientas:
 
-•	**Streamlit**: Una biblioteca de Python que permite crear interfaces web interactivas de manera rápida y sencilla.
-
-•	**Folium**: Una biblioteca de visualización de mapas en Python utilizada para representar los recursos sociales en un mapa interactivo.
-
-•	**Whoosh**: Una biblioteca de búsqueda en Python utilizada para implementar el motor de búsqueda de la aplicación, permitiendo indexar y buscar rápidamente en grandes cantidades de texto.
-
-•	**OpenAI API**: Se integra la OpenAI API para generar recomendaciones de servicios sociales basadas en los documentos recopilados, mejorando la funcionalidad del buscador.
+- **Streamlit**: Una biblioteca de Python que permite crear interfaces web interactivas de manera rápida y sencilla.
+- **Folium**: Una biblioteca de visualización de mapas en Python utilizada para representar los recursos sociales en un mapa interactivo.
+- **Whoosh**: Una biblioteca de búsqueda en Python utilizada para implementar el motor de búsqueda de la aplicación, permitiendo indexar y buscar rápidamente en grandes cantidades de texto.
+- **OpenAI API**: Se integra la OpenAI API para generar recomendaciones de servicios sociales basadas en los documentos recopilados, mejorando la funcionalidad del buscador.
 
 Estas herramientas han sido fundamentales para ofrecer una experiencia fluida y eficiente a los usuarios, permitiendo el acceso a la información y recursos sociales relevantes de manera intuitiva.
