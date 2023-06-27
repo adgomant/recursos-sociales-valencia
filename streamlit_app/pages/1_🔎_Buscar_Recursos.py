@@ -1,15 +1,11 @@
 
 # srcs/streamlit_app/app.py
-import sys
 import openai
 import pandas as pd
 import numpy as np
 import streamlit as st
 import json
 import re
-import sys
-import argparse
-from datetime import datetime
 from whoosh.index import open_dir
 from whoosh.qparser import QueryParser
 import folium
@@ -67,6 +63,7 @@ def load_index(idx_dir):
     ix = open_dir(idx_dir)
     return ix
 
+@st.cache_data
 def index_search(ix, q, num_docs=-1):
     parser = QueryParser(fieldname="content", schema=ix.schema)
     query = parser.parse(q)
