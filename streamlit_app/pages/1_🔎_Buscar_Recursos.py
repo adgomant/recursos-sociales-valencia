@@ -172,7 +172,6 @@ def search_app():
     else:
         st.markdown("""
         ## 
-        #### ¡Bienvenido al Buscador de Recursos Sociales!
         
         Estamos aquí para ayudarte a encontrar los recursos y servicios sociales que necesitas. Nuestro buscador te permitirá acceder a información relevante y actualizada sobre una amplia variedad de recursos disponibles en la ciudad de Valencia.
 
