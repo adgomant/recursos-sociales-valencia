@@ -27,11 +27,11 @@ Estas herramientas han sido fundamentales para ofrecer una experiencia fluida y 
 # Contenido del Repositorio
 El repositorio está organizado en las siguientes carpetas y archivos:
 
-- data: Contiene los archivos de datos utilizados en la aplicación.
-- - datos_sociales1.csv: Archivo CSV que contiene datos sociales geolocalizados de centros.
-- - social_centres.json: Archivo JSON que contiene información extraída de los centros sociales.
-- social_centres_index: Carpeta para almacenar el índice generado a partir de los datos de los centros sociales.
-- streamlit_app: Carpeta que contiene el código de la aplicación Streamlit.
-- web_crawling: Carpeta que contiene el código para recuperar información de la web.
-- README.md: Archivo actual que contiene información sobre la estructura y el contenido del repositorio.
-- requirements.txt: Archivo que enumera las dependencias y sus versiones específicas requeridas para ejecutar la aplicación correctamente.
+- **data**: Contiene los archivos de datos utilizados en la aplicación.
+  - **datos_sociales1.csv**: Archivo CSV que contiene datos sociales geolocalizados de centros.
+  - **social_centres.json**: Archivo JSON que contiene información extraída de los centros sociales.
+- **social_centres_index**: Carpeta para almacenar el índice generado a partir de los datos de los centros sociales.
+- **streamlit_app**: Carpeta que contiene el código de la aplicación Streamlit.
+- **web_crawling**: Carpeta que contiene el código para recuperar e indexar información de la web.
+- **README.md**: Archivo actual que contiene información sobre la estructura y el contenido del repositorio.
+- **requirements.txt**: Archivo que enumera las dependencias y sus versiones específicas requeridas para ejecutar la aplicación correctamente.
