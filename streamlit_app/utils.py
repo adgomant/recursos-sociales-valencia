@@ -35,7 +35,6 @@ def load_data():
     data = pd.DataFrame(new_rows, index=new_idx, columns=new_cols)
     return data
 
-
 ###############################################################################
 # Buscador
 ###############################################################################
@@ -127,7 +126,6 @@ def chat_gpt(prompt, model="gpt-3.5-turbo", max_tokens=1024, max_context_tokens=
         ]
     )
     return response["choices"][0]["message"]["content"]
-
 
 ###############################################################################
 # Mapa
