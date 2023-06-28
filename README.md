@@ -18,6 +18,7 @@ En el desarrollo de la aplicación de Recursos Sociales Valencia, se han utiliza
 
 - **Streamlit**: Una biblioteca de Python que permite crear interfaces web interactivas de manera rápida y sencilla.
 - **Folium**: Una biblioteca de visualización de mapas en Python utilizada para representar los recursos sociales en un mapa interactivo.
+- **Beautiful Soup**: Una biblioteca de Python utilizada para extraer información de páginas web y realizar el web scraping necesario para recopilar datos de recursos sociales.
 - **Whoosh**: Una biblioteca de búsqueda en Python utilizada para implementar el motor de búsqueda de la aplicación, permitiendo indexar y buscar rápidamente en grandes cantidades de texto.
 - **OpenAI API**: Se integra la OpenAI API para generar recomendaciones de servicios sociales basadas en los documentos recopilados, mejorando la funcionalidad del buscador.
 
