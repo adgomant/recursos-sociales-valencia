@@ -13,12 +13,12 @@ from utils import (
    
 def map_app():
     # sidebar
-    lista_asociaciones = get_asociaciones()
+    lista_asociaciones = get_asociaciones(st.session_state.ubi_data)
     defasoc = st.session_state.most_recent_results_from_search
     asoc = st.sidebar.multiselect('Asociación/Centro/Servicio', lista_asociaciones, defasoc)
-    min_cp, max_cp = get_max_postcode()
+    min_cp, max_cp = get_max_postcode(st.session_state.ubi_data)
     postcode = st.sidebar.number_input('Código postal', 0, max_cp) #min, max cod postal
-    lista_themes = get_themes()
+    lista_themes = get_themes(st.session_state.ubi_data)
     group = st.sidebar.multiselect('Tema Social: ', lista_themes, [])
     
     # body
