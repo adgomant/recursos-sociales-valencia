@@ -104,6 +104,7 @@ def search_result_template(i: int, url: str, title: str, highlights: str,
     
 @st.cache_data
 def set_openai_apikey(key):
+    import openai
     openai.apikey = key
     
 @st.cache_data
