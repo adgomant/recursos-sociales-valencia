@@ -5,4 +5,4 @@ pandas
 numpy
 simplejson
 folium
-openai
+openai<1.0.0
