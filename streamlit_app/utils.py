@@ -104,7 +104,7 @@ def search_result_template(i: int, url: str, title: str, highlights: str,
     
 @st.cache_data
 def set_openai_apikey(key):
-    openai.apikey = apikey
+    openai.apikey = key
     
 @st.cache_data
 def truncate_text(text, max_tokens):
