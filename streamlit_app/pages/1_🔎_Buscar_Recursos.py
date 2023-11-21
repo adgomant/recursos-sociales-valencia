@@ -17,9 +17,9 @@ from utils import (
 def search_app():
     # sideabar
     num_results = st.sidebar.number_input('Número de resultados:', 10, 40)
-    want_recomendation = st.sidebar.radio('Obtener recomendación?', ['Sí', 'No'])
+    want_recomendation = st.sidebar.radio('Obtener recomendación inteligente?', ['Sí', 'No'], default="No")
     if want_recomendation == "Sí":
-        st.sidebar.write("Si desea recomendaciones inteligentes, ingrese su clave de OpenAI.")
+        st.sidebar.write("Ingrese su clave de OpenAI.")
         openaiapikey = st.sidebar.text_input("Your openai API key:")
         set_openai_apikey(openaiapikey)
 
