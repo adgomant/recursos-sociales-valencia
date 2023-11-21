@@ -53,7 +53,7 @@ def search_app():
                     st.write(f"{answer.strip()}\n\nOtros servicios recomendados:")
         else:
             with chat_response:
-                if want_recomendation == "Sí:
+                if want_recomendation == "Sí":
                     st.write("Ups, parece que quieres recomendaciones inteligentes pero no ha ingresado tu clave de OpenAI. Introdúzcala y el sistema se encargará de lo demás!")
                 st.write("Servicios recomendados:")
         st.session_state.most_recent_results_from_search = []
