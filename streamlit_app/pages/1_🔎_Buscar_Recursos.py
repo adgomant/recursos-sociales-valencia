@@ -19,8 +19,8 @@ def search_app():
     num_results = st.sidebar.number_input('Número de resultados:', 10, 40)
     want_recomendation = st.sidebar.radio('Obtener recomendación inteligente?', ['Sí', 'No'], index=1)
     if want_recomendation == "Sí":
-        st.sidebar.write("Ingrese su clave de OpenAI.")
-        openaiapikey = st.sidebar.text_input("Your openai API key:")
+        #st.sidebar.write("Ingrese su clave de OpenAI.")
+        openaiapikey = st.sidebar.text_input("Ingrese su clave de OpenAI.")
         set_openai_apikey(openaiapikey)
 
     #body
@@ -52,6 +52,8 @@ def search_app():
                 else:
                     st.write(f"{answer.strip()}\n\nOtros servicios recomendados:")
         else:
+            if openaiapikey:
+                st.write("Ups, parece que quieres recomendaciones inteligentes pero no has ingresado tu clave de OpenAI. Introdúzcala y el sistema se encargará de lo demás!")
             with chat_response:
                 st.write("Servicios recomendados:")
         st.session_state.most_recent_results_from_search = []
