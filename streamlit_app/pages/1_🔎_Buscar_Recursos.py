@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import openai
 import streamlit as st
 
 import sys
@@ -21,7 +22,8 @@ def search_app():
     if want_recomendation == "Sí":
         #st.sidebar.write("Ingrese su clave de OpenAI.")
         openaiapikey = st.sidebar.text_input("Ingrese su clave de OpenAI.")
-        set_openai_apikey(openaiapikey)
+        openai.api_key = openaiapikey
+        #set_openai_apikey(openaiapikey)
 
     #body
     st.title('Búsca Recursos Sociales')
