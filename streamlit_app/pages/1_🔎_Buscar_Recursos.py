@@ -9,6 +9,7 @@ from utils import (
     index_search, 
     search_result_template, 
     truncate_text,
+    set_openai_apikey,
     chat_gpt,
     display_map
 )
